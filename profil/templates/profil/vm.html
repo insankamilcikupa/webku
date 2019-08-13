@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TK Insan Kamil </title>
+
+    {% include "snippets/styles.html" %}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/styles.css" %}">
+    <script src="main.js"></script>
+
+</head>
+<body>
+        <h1>{{judul1}}</h1>
+        <h2>VISI MISI</h2>
+        <h3>Ini adalah halaman visi misi</h3>
+
+        {% for tampil in Posts %}
+            <h3>{{tampil.judul}}</h3>
+            <h4>{{tampil.posting}}</h4>
+        {% endfor %}
+
+        {% include "snippets/navbar.html" %}
+              <div class="card text-center"></div>
+      {% include "snippets/footer.html" %}
+      {% include "snippets/scripts.html" %}
+</body>
+</html>

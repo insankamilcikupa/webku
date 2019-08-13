@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TK Insan Kamil </title>
+
+    {% include "snippets/styles.html" %}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/styles.css" %}">
+    <script src="main.js"></script>
+
+</head>
+<body>
+       <div class="container">
+           <br>
+           <br>
+           <br>
+           <h4>Syarat dan Ketentuan</h4>
+           <br>
+           <h6>
+               1. Jenis Buket hanya tersedia untuk Buket Boneka, Coklat, Bunga dan Kombinasi <br>
+               2. Tidak bisa menawar harga <br>
+               3. Lakukan pesanan harus minimal H-4 sebelum diambil <br>
+               4. Wajib melakukan DP sebesar 5% dari harga buket saat order <br>
+               5. Barang yang telah dibeli tidak dapat dikembalikan <br>
+           </h6>
+       </div>
+       <div class="container">
+            <br>
+            <h4>Dapat Menghubungi Kami di</h4>
+            <br>
+            <h6>
+                Akun instagram
+                <h5>@buketinajaaa</h5>
+            </h6>
+            <h6>
+                Whatsapp
+                    <h5>+6282298711215</h5>
+            </h6>
+            <h6>
+                Email
+                    <h5>buketinajayuk@gmail.com</h5>
+            </h6>
+        </div>
+        <div class="container">
+            <br>
+            <h4>Bantuan </h4>
+            <br>
+            <h6>
+                Pemesanan di Website Kami <br>
+                <h7>
+                    1. Lakukan Register akun jika belum memiliki akun (klik disini) <br>
+                    2. Login akun untuk memesan buket yang tersedia (klik disini) <br>
+                    3. Klik Pesan untuk memesan produk dengan jumlah yang diinginkan <br>
+                </h7>
+            </h6>
+            </div>
+        {% include "snippets/navbar.html" %}
+              <div class="card text-center"></div>
+      {% include "snippets/footer.html" %}
+      {% include "snippets/scripts.html" %}
+</body>
+</html>

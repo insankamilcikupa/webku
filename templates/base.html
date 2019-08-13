@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buketin Aja Yuk </title>
+
+    {% include "snippets/styles.html" %}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/styles.css" %}">
+    <script src="main.js"></script>
+
+</head>
+<body>
+        {% include "snippets/navbar.html" %}
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-black text-center">
+            </br><br/>
+                <h1 class="display-4">Selamat Datang 
+                </h1>
+                <p class="lead">di Buketin Aja Yuk</p>
+                <br/><br/><br/><br/><br/><br/><br/><br/>
+                <p>
+                    <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      REGISTER
+                    </button>
+                  </p>
+            </div>
+        </div>
+              <div class="card text-center"></div>
+      {% include "snippets/footer.html" %}
+      {% include "snippets/scripts.html" %}
+</body>
+</html>

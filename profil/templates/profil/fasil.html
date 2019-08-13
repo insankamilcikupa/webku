@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TK Insan Kamil </title>
+
+    {% include "snippets/styles.html" %}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "css/styles.css" %}">
+    <script src="main.js"></script>
+
+</head>
+<body>
+        <h1>{{judul1}}</h1>
+        <h2>FASILITAS</h2>
+
+        {% for post1 in Posts %}
+            <h3>{{post1.judul}}</h3>
+            <h4>{{post1.posting}}</h4>
+        {% endfor %}
+
+        {% include "snippets/navbar.html" %}
+              <div class="card text-center"></div>
+      {% include "snippets/footer.html" %}
+      {% include "snippets/scripts.html" %}
+</body>
+</html>
